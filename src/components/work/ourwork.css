@@ -1,0 +1,52 @@
+/* ourwork.css */
+
+.our-work {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--dark-color);
+  }
+  
+  .our-work h1 {
+    margin-bottom: 40px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+  }
+
+
+  .our-work h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: var(--line-green);
+    margin: 10px auto;
+  }
+  
+  .our-work-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+    background-color: var(--dark-color);
+  }
+  
+  .our-work-card {
+    width: 300px;
+    overflow: hidden;
+  }
+  
+  .our-work-card img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .our-work-card {
+      width: 100%;
+    }
+    
+    .our-work-wrapper {
+      padding: 0;
+    }
+    
+  }

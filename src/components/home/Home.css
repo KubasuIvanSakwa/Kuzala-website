@@ -1,0 +1,71 @@
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.slide-content {
+  position: relative;
+}
+
+.slide-content img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.text-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.text-content button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.text-content button:hover {
+  background-color: var(--main-color);
+}
+.animated-img {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

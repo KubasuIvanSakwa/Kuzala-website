@@ -1,0 +1,75 @@
+.services h1{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+
+.services h1::after{
+  content: '';
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: var(--line-green);
+  margin: 10px auto;
+}
+
+
+.services-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 2rem 0;
+}
+
+
+.service{
+  text-align: center;
+  padding: 1rem;
+}
+.service h2{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service img{
+  max-width: 300px;
+  height: 300px;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+
+}
+
+.service-btn{
+  margin-top: 310px;
+  font-size: 1.2rem;
+  background-color: var(--line-green);
+  color: var(--white-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+}
+
+.service-btn:hover{
+  background-color: var(--white-color);
+  color: var(--line-green);
+}
+
+@media screen and (max-width: 768px){
+  .services-wrapper{
+    grid-template-columns: 1fr;
+  }
+
+  .service{
+    margin-bottom: 2rem;
+  }
+
+  .service h2{
+    font-size: 1.2rem;
+  }
+
+  
+}

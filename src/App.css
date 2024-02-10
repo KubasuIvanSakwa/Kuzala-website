@@ -1,0 +1,24 @@
+
+
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 14px;
+}
+
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light grey track color */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:var(--main-color); /* Green color for the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #45a049; /* Darker green color on hover */
+}

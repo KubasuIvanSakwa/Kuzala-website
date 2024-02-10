@@ -1,0 +1,130 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .navigation {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navigation li {
+    margin-right: 20px;
+  }
+  
+  .navigation li a {
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+    .navigation li a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: width 0.3s ease;
+  }
+  
+  .navigation li a:hover::before {
+    width: 100%;
+  }
+  
+  .navigation li a:hover {
+    color: var(--main-color);
+  }
+  
+  
+  .booking-button {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .booking-button:hover {
+    background-color: var(--line-green);
+    color:var(--light-color);
+  }
+  
+  .booking-button:focus {
+    outline: none;
+  }
+
+  .menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 999;
+      position: relative;
+
+    }
+
+    .booking-button{
+        display: none;
+    }
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 40%;
+        background-color:var(--main-color);
+        padding: 20px;
+        margin-top: 38px;
+    }
+
+    .navigation li {
+        margin-bottom: 10px;
+    }
+
+    .navigation li a {
+        color: var(--white-color);
+    }
+
+    .navigation li a:hover {
+        color: var(--light-color);
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        
+    }
+}
