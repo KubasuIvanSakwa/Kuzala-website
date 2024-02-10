@@ -30,10 +30,9 @@ const Nav = () => {
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/postpartum-care">Postpartum Care</Link></li>
                 <li><Link to="/birth-support">Birth Support</Link></li>
-                <li><Link to="/Birth-classes">Birth Classes</Link></li>
+                <li><Link to="/birth-classes">Birth Classes</Link></li>
                 <li><Link to="/prenatal-massage"> Prenatal Massage</Link></li>
-                <li><Link to="/general-massage">General Massage</Link></li>
-               
+                <li><Link to="/makeupstudio">MakeupStudio</Link></li>
             </ul>
             <button className="booking-button" onClick={handleBooking}>Book Now</button>
         </nav>
