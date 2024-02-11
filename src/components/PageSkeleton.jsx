@@ -20,11 +20,11 @@ return (
             <h2 className="about-heading">{title}</h2>
             {
                 image1 ?
-                    <div className="mt-10 flex flex-wrap justify-center lg:flex-cols lg:gap-2 gap-1 lg:overflow-hidden lg:w-[100%] lg:h-[30rem] w-[20rem] overflow-scroll  h-[10rem] p-3">
-                        <img src={image1} className="w-[20rem]"/>
-                        <img src={image2} className="w-[20rem]"/>
-                        <img src={image3} className="w-[20rem]"/>
-                        <img src={image4} className="w-[20rem]"/>
+                    <div className="mt-10 flex align-middle lg:gap-2 gap-1 lg:overflow-y-hidden lg:w-[100%] lg:h-[30rem] w-[20rem] overflow-scroll p-1">
+                        <img src={image1} className="w-2/3 h-3/4"/>
+                        <img src={image2} className="w-2/3 h-3/4"/>
+                        <img src={image3} className="w-2/3 h-3/4"/>
+                        <img src={image4} className="w-2/3 h-3/4"/>
                     </div>
                 : ''
             }

@@ -13,39 +13,60 @@ const Services = () => {
     <div className="services-wrapper">
       <div className='service'>
         <h2>Postpartum Care</h2>
-        <button className='service-btn'>Learn More</button>
+        <button 
+          className='service-btn'
+          onClick={() => {
+            window.location.href = '/postpartum-care'
+          }}
+        >
+          Learn More
+        </button>
         <img src={SERVICE1} alt="Postpartum Care" className='service-img' />
       </div>
 
-      <div className='service'>
+      {/* <div className='service'>
         <h2>Spa</h2>
         <button className='service-btn'>Learn More</button>
         <img src={SERVICE2} alt="Spa" className='service-img'/>
-      </div>
+      </div> */}
 
       <div className='service'>
-        <h2>Salon</h2>
-        <button className='service-btn'>Learn More</button>
+        <h2>Birth Support</h2>
+        <button 
+          className='service-btn'
+          onClick={() => {
+            window.location.href = '/birth-support'
+          }}
+        >
+          Learn More
+        </button>
         <img src={SERVICE3} alt="Salon" className='service-img'/>
       </div>
 
       <div className='service'>
         <h2>Birth Classes</h2>
-        <button className='service-btn'>Learn More</button>
+        <button 
+          className='service-btn'  
+          onClick={() => {
+              window.location.href = '/birth-classes'
+            }}
+          >
+            Learn More
+          </button>
         <img src={SERVICE4} alt="Birth Classes" className='service-img' />
       </div>
 
-      <div className='service'>
+      {/* <div className='service'>
         <h2>Makeup Studio</h2>
         <button  className='service-btn'>Learn More</button>
         <img src={SERVICE5} alt="Makeup Studio" className='service-img'/>
-      </div>
+      </div> */}
 
-      <div className='service'>
+      {/* <div className='service'>
         <h2>Spa</h2>
         <button  className='service-btn'>Learn More</button>
         <img src={SERVICE2} alt="Spa" className='service-img'/>
-      </div>
+      </div> */}
     </div>
     </div>
 

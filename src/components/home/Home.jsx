@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Home1 from '../../assets/home1.svg';
 import Home2 from '../../assets/home1.svg';
 import Home3 from '../../assets/home1.svg';
+import ceo from '../../assets/ceo.svg';
 
 
 // Import Swiper styles
@@ -72,6 +73,19 @@ export default function Home() {
       </SwiperSlide>
         
       </Swiper> */}
+      <div className="h-[80vh] bg-[#81A969] relative overflow-hidden">
+          <img src={ceo} className="min-w-4 absolute bottom-[-1.6rem]"/>
+          <div className='w-2/4 absolute right-[5rem] bottom-[7rem] text-xl'>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et  dolore 
+            magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit 
+            in voluptate velit esse cillum dolore
+            </p>
+          </div>
+      </div>
       <WelcomeMessage />
       <Services/>
       <OurWork/>
