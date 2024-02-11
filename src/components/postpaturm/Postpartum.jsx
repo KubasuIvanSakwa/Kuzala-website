@@ -1,17 +1,17 @@
 import PageSkeleton from "../PageSkeleton"
-import OURWORK1 from '../../assets/service1.png'
-import OURWORK2 from '../../assets/service2.png'
-import OURWORK3 from '../../assets/service3.png'
-import OURWORK4 from '../../assets/service4.png'
+import ps1 from '../../assets/ps4.webp'
+import ps2 from '../../assets/ps3.jpg'
+import ps3 from '../../assets/ps2.webp'
+import ps4 from '../../assets/ps5.jpeg'
 
 const Postpartum = () => {
   return (
     <PageSkeleton 
       title={'Postpartum'}
-      image1={OURWORK1}
-      image2={OURWORK2}
-      image3={OURWORK3}
-      image4={OURWORK4}
+      image1={ps1}
+      image2={ps2}
+      image3={ps3}
+      image4={ps4}
       description1={'Welcome to Kuzula Doula, where your journey through motherhood is\
             our passion and purpose. With a legacy spanning over a decade,\
             we&apos;ve been dedicated to empowering mothers with comprehensive\
