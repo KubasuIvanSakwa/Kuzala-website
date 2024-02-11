@@ -3,9 +3,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 //Images import
-import Home1 from '../../assets/home.jpg';
-import Home2 from '../../assets/home2.svg';
-import Home3 from '../../assets/home3.svg';
+import Home1 from '../../assets/home1.svg';
+import Home2 from '../../assets/home1.svg';
+import Home3 from '../../assets/home1.svg';
 
 
 // Import Swiper styles
@@ -24,7 +24,7 @@ import OurWork from './../work/OurWork';
 export default function Home() {
   return (
     <>
-      <Swiper
+      {/* <Swiper
         spaceBetween={30}
         slidesPerView={1}
         centeredSlides={true}
@@ -41,7 +41,7 @@ export default function Home() {
         className="mySwiper"
       >
           <SwiperSlide>
-        <div className='slide-content'>
+        <div className='slide-content w-[100%]'>
           <img src={Home1} alt="Home1" className='animated-img' />
           <div className='text-content'>
             <h1>Postpartum Care</h1>
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </SwiperSlide>
         
-      </Swiper>
+      </Swiper> */}
       <WelcomeMessage />
       <Services/>
       <OurWork/>
