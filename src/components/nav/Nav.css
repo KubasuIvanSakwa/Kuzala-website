@@ -1,13 +1,17 @@
 .nav {
     display: flex;
+    background: #81A969;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    height: 7rem;
   }
   
   .logo img {
-    width: 100px;
-    height: auto;
+    position: absolute;
+    top: -4.3rem;
+    z-index: 9;
+    width: 15rem;
   }
   
   .navigation {
@@ -35,7 +39,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--main-color);
+    background-color: white;
     transition: width 0.3s ease;
   }
   
@@ -44,14 +48,14 @@
   }
   
   .navigation li a:hover {
-    color: var(--main-color);
+    color: white;
   }
   
   
   .booking-button {
-    background-color: var(--main-color);
+    background-color: transparent;
     color: var(--white-color);
-    border: none;
+    border: 1px solid white;
     border-radius: 25px;
     padding: 10px 20px;
     font-size: 16px;
@@ -60,8 +64,8 @@
   }
   
   .booking-button:hover {
-    background-color: var(--line-green);
-    color:var(--light-color);
+    background: white;
+    color: #81A969;
   }
   
   .booking-button:focus {
@@ -72,7 +76,7 @@
     display: none;
     font-size: 2rem;
     cursor: pointer;
-    color: var(--main-color);
+    color: white;
 }
 
 
