@@ -18,21 +18,20 @@ const Nav = () => {
     return (
         <nav className="nav">
             <div className="logo">
-                <img src={LOGO} alt="Kuzala Logo" />
+                <img src={LOGO} alt="Kuzala Logo " />
             </div>
 
             <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={handleToggle}>
                 {isOpen ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
             </div>
 
-            <ul className={`navigation ${isOpen ? 'open' : ''}`}>
+            <ul className={`navigation ${isOpen ? 'open' : ''} relative left-[6rem] top-[0.5rem]`}>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/postpartum-care">Postpartum Care</Link></li>
                 <li><Link to="/birth-support">Birth Support</Link></li>
                 <li><Link to="/birth-classes">Birth Classes</Link></li>
                 <li><Link to="/prenatal-massage"> Prenatal Massage</Link></li>
-                <li><Link to="/makeupstudio">MakeupStudio</Link></li>
             </ul>
             <button className="booking-button" onClick={handleBooking}>Book Now</button>
         </nav>

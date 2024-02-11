@@ -24,7 +24,7 @@ import OurWork from './../work/OurWork';
 export default function Home() {
   return (
     <>
-      <Swiper
+      {/* <Swiper
         spaceBetween={30}
         slidesPerView={1}
         centeredSlides={true}
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </SwiperSlide>
         
-      </Swiper>
+      </Swiper> */}
       <WelcomeMessage />
       <Services/>
       <OurWork/>
